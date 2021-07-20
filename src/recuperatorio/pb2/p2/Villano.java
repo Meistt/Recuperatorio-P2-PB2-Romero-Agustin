@@ -1,10 +1,10 @@
 package recuperatorio.pb2.p2;
 
-public class Heroe extends Personaje {
+public class Villano extends Personaje{
 	
 	private Integer poderInicial;
 	
-	public Heroe(String nombre, String gema, Integer poderInicial) {
+	public Villano(String nombre, String gema, Integer poderInicial) {
 		super(nombre, gema);
 		this.poderInicial = poderInicial;
 	}
@@ -16,6 +16,6 @@ public class Heroe extends Personaje {
 	public void setPoderInicial(Integer poderInicial) {
 		this.poderInicial = poderInicial;
 	}
-	
+
 	
 }
