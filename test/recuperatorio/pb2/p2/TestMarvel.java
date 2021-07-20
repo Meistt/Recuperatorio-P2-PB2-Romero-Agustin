@@ -10,7 +10,7 @@ public class TestMarvel {
 	@Test
 	public void queSePuedaCrearUnEscuadronDeHeroes() {
 		Escuadron nuevo = new Escuadron("Heroes");
-		Heroe capitanAmerica = new Heroe("Capitan America", "Poder", 75);
+		Heroe capitanAmerica = new Heroe("Capitan America", "Poder", 160);
 		Heroe hulk = new Heroe("Hulk", "Alma", 150);
 		Heroe ironMan = new Heroe("Iron Man", "Espacio", 200);
 		
@@ -44,7 +44,20 @@ public class TestMarvel {
 	
 	@Test
 	public void queSePuedaTriplicarElPoderInicial() {
-		Heroe capitanAmerica = new Heroe("Capitan America", "Poder", 75);
-		Heroe ironMan = new Heroe("Iron Man", "Espacio", 200);
+		Batalla nueva = new Batalla("Infinito");
+		
+		Personaje capitanAmerica = new Heroe("Capitan America", "Poder", 75);
+		Personaje ironMan = new Heroe("Iron Man", "Espacio", 200);
+		
+		Personaje loki = new Villano("Loki", "Realidad", 175);
+		Personaje winterSoldier = new Villano("Winter Soldier", "Tiempo", 180);
+		
+		nueva.triplicarPoderPersonaje(capitanAmerica);
+		nueva.triplicarPoderPersonaje(ironMan);
+		nueva.triplicarPoderPersonaje(loki);
+		nueva.triplicarPoderPersonaje(winterSoldier);
+		
+		
+		
 	}
 }
