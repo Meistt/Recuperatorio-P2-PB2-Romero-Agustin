@@ -108,7 +108,7 @@ public class TestMarvel {
 		nueva1.crearBatalla(ironMan, redSkull);
 		
 		List<Villano> villanos = new ArrayList<>(nueva1.getBatallasGanadasVillanos());	
-		Collections.sort(villanos);
+		
 	}
 	
 	
